@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#14070d">
+  <meta name="description" content="Privacy policy for SPS Master Control and its use of Google API data.">
+  <title>Privacy Policy · SPS Master Control</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="SPS Master Control home">
+      <span class="mark" aria-hidden="true">SPS</span>
+      <span>Master Control</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Overview</a>
+      <a aria-current="page" href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="policy-shell">
+    <header class="policy-header">
+      <p class="eyebrow">Effective 1 September 2026</p>
+      <h1>Privacy policy</h1>
+      <p class="lede">This policy describes how SPS Master Control accesses and handles Google user data. The application is a private, owner-operated Windows desktop tool and is not offered as a public service.</p>
+    </header>
+
+    <div class="policy-layout">
+      <aside aria-label="Policy summary">
+        <p class="aside-label">At a glance</p>
+        <ul>
+          <li>No public accounts</li>
+          <li>No advertising</li>
+          <li>No sale of data</li>
+          <li>No SPS cloud database</li>
+          <li>Owner-controlled storage</li>
+        </ul>
+      </aside>
+
+      <article class="policy-content">
+        <section>
+          <h2>1. Scope</h2>
+          <p>This policy applies to Google data accessed by SPS Master Control and to this public information website. The website contains no sign-in, forms, application analytics, advertising, or tracking code. GitHub may process basic hosting information under its own privacy terms because it hosts these pages.</p>
+        </section>
+
+        <section>
+          <h2>2. Google permissions</h2>
+          <p>SPS Master Control uses two separate Google authorization profiles:</p>
+          <ul>
+            <li><strong>Read-only authorization</strong> for Google Drive metadata, Google Sheets, and Apps Script projects. It supports inventory, integrity checks, drift checks, backup preparation, and recovery evidence.</li>
+            <li><strong>Privileged development authorization</strong> for guarded DEV/LAB backup and recovery operations involving Google Drive, Google Sheets, Apps Script projects, and Apps Script deployments. It is stored separately and is used only after the owner initiates an operation and the application’s authorization and safety checks allow it.</li>
+          </ul>
+          <p>The current “Read my spreadsheets” action reads only resources named by the installed registry. It requests file metadata and spreadsheet structure without requesting spreadsheet cell contents. Other explicitly initiated engineering workflows may read spreadsheet data or Apps Script source when that information is required for validation, backup, or recovery.</p>
+        </section>
+
+        <section>
+          <h2>3. Data accessed</h2>
+          <p>Depending on the owner-initiated operation, the application may process:</p>
+          <ul>
+            <li>Google Drive file identifiers, names, types, timestamps, locations, ownership and permission-related metadata;</li>
+            <li>Google Sheets identifiers, titles, structure, formatting, native objects, formulas, and cell data;</li>
+            <li>Apps Script project identifiers, files, source, versions, deployments, and related metadata;</li>
+            <li>Google OAuth authorization records needed to request and renew access.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. How data is used</h2>
+          <p>Google data is used only to show the owner what the application can verify, compare registered SPS resources with accepted evidence, create owner-requested backups, support controlled recovery, and record the outcome of those operations.</p>
+          <p>Google user data is not sold, rented, used for advertising, used for unrelated profiling, or used to train general-purpose artificial intelligence models. SPS Master Control does not send Google user data to an SPS-operated cloud service.</p>
+        </section>
+
+        <section>
+          <h2>5. Storage and retention</h2>
+          <p>Google OAuth client and token files are stored in the owner’s private SPS folder on the owner’s computer, outside the replaceable application version. The public website does not receive or store them.</p>
+          <p>Owner-requested operations may create local reports, integrity evidence, backup catalogues, recovery records, or backup copies in the owner’s Google Drive. Their retention is controlled by the owner’s installed SPS policies and the owner’s Google account. There is no publisher-operated server copy.</p>
+        </section>
+
+        <section>
+          <h2>6. Sharing and transfers</h2>
+          <p>The desktop application communicates with Google’s authorization and API endpoints to perform the operation the owner requested. It does not disclose Google user data to advertisers, data brokers, or unrelated third parties.</p>
+          <p>Use of information obtained from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="external">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+        </section>
+
+        <section>
+          <h2>7. Security</h2>
+          <p>The Google authorization flow opens Google’s own consent page in the system browser, uses PKCE and a local loopback response, and sends OAuth credentials only to Google’s registered endpoints. The read-only and privileged authorizations use separate token files. Application safety checks and environment boundaries remain independent of Google consent.</p>
+          <p>No security system eliminates every risk. The owner can review or revoke SPS Master Control access from the Google Account permissions page.</p>
+        </section>
+
+        <section>
+          <h2>8. Owner choices</h2>
+          <p>The owner chooses whether to authorize Google access and when to initiate an operation. Revoking access prevents the affected authorization from obtaining new Google access tokens. Local evidence and Google Drive backups remain under the owner’s control and are not automatically represented as deleted by revocation.</p>
+        </section>
+
+        <section>
+          <h2>9. Changes and contact</h2>
+          <p>This policy will be updated if the application’s Google access or data handling changes. The current support contact is the address shown on the SPS Master Control Google consent screen.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>SPS Master Control</p>
+    <p><a href="index.html">Return to overview</a></p>
+  </footer>
+</body>
+</html>
